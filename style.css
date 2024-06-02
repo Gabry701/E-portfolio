@@ -1,0 +1,291 @@
+:root {
+    --red: #e66465;
+    --blue: #828be9;
+    --blue-gradient: linear-gradient(to top, #9198e5a0, transparent);
+    --red-gradient: linear-gradient(to top, #e66465a0, transparent);
+    --blue-red-gradient: linear-gradient(to right, var(--blue), var(--red));
+    --displayMore: none;
+    --shadow-time: 0.5s;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+body {
+    background-color: red;
+    background-color: #cfe6f5;
+    font-family: Helvetica;
+    width: 100%;
+}
+
+.waves-container {
+    aspect-ratio: 960/200;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-image: url('./wave.svg');
+}
+
+.profile-image {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/profilePic.jpeg);
+    border: 2px solid rgb(0, 0, 79);
+}
+
+.name {
+    font-size: 2.5rem;
+    margin: 30px;
+    text-align: center;
+    background: linear-gradient(to right, var(--blue), var(--red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #00000000;
+}
+.align-grid {
+    display: flex;
+    justify-content: center;
+    margin: 200px 10%; 
+}
+.skill-grid {
+    display: grid;
+    grid-template: repeat(3, minmax(50px, 450px))  / repeat(2, minmax(200px, 600px));
+    gap: 10%;
+}
+
+.skill-container {
+    /* display: grid;
+    grid-template-rows: 3fr 1fr; */
+    /* outline: 2px solid var(--blue); */
+    
+    /* border-bottom: 10px solid black; */
+  
+    background-size: cover;
+    background-position: center;
+}
+.skill-container:hover {   
+    transition: var(--shadow-time);
+}
+
+.left {
+    border: 3px solid var(--blue);
+    /* box-shadow: 0 0 10px 7px  var(--blue); */
+}
+.left:hover {
+    box-shadow: 0 0 15px 15px #9ba4f5;
+}
+.right {
+    border: 3px solid var(--red);
+    /* box-shadow: 0 0 10px 7px  var(--red); */
+}
+.right:hover {
+    box-shadow: 0 0 15px 15px #ee8181;
+}
+/* .skill-image-container{
+    /* height: 100%; */
+    /* background: linear-gradient(to right, transparent 0, var(--blue)); */
+    /* overflow: hidden;} */
+/*
+.skill-image {
+    /* width: 100%; */
+    /* height: 1%; */
+    /* border-radius: 30px; 
+} */
+.skill-name {
+    text-align: center;
+    position: relative;
+    /* background: radial-gradient(var(--red), transparent); */
+    top: 85%;
+    margin: auto;
+    width: fit-content;
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    
+}
+.left .skill-name {
+    color: var(--blue);
+    background-color: var(--red);
+}
+
+.right .skill-name {
+    color: var(--red);
+    background-color: var(--blue);
+}
+.english {
+    background-image: var(--blue-gradient), url(./images/english.png);  
+
+    /* overflow: hidden; */
+    /* background-color: var(--blue); */
+}
+.piano {
+    
+    background: var(--red-gradient), url(./images/piano.png);
+   
+}
+
+.web-dev {
+    background: var(--blue-gradient), url(./images/webDev.jpg);
+}
+.school {
+    background: var(--red-gradient), url(./images/school.jpg);
+}
+.skill-container {
+    border-radius: 40px;
+    transition: 1s;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.more {
+    height: 30%;
+    width: 90%;
+    justify-self: center;
+    grid-column: span 2;
+    border-radius: 40px;
+    background: #e8f1f7;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more::after {
+    content: "";
+    position: absolute;
+    inset: -.1em;
+    background: var(--blue-red-gradient);
+    border-radius: 40px;
+    z-index: -1;
+}
+.more:hover:after {
+    content: "";
+    position: absolute;
+    inset: -.3em;
+    background: var(--blue-red-gradient);
+    filter: blur(15px);
+    border-radius: 40px;
+    z-index: -1;
+}
+
+.more-text {
+    text-align: center;
+    font-size: 2rem;
+    background: var(--blue-red-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #00000000;
+}
+
+
+/* footer */
+
+footer {
+    aspect-ratio: 900/200;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(wave-haikei.svg);
+}
+.footer-container {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: flex-end;
+}
+
+footer a {
+    display: block;
+}
+.about {
+    h4 {color: var(--blue);}
+    p {color: var(--red);}
+}
+.contacts {
+    h4 {color: var(--red);}
+    a {color: var(--blue);}
+}
+
+
+/* other pages */
+.secondaryPfp {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    top: 25px;
+    left: 5%;
+}
+
+.skill-image-container {
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 40px;
+    margin-bottom: 25px;
+    /* border-width: 10px;
+    border-style: solid;
+    border-image: var(--blue-red-gradient); */
+}
+.skill-image {
+    width: 100%;
+    border-radius: 40px;
+}
+.skill-image-container::before {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: -5px;
+    background: var(--blue-red-gradient);
+    border-radius: inherit;
+    z-index: -1;
+}
+/* .blob-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-image: url(blob-haikei.svg);
+} */
+
+.left-container {
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10%;
+}
+.text-container, .image-container {
+    flex-basis: 50%;
+    min-height: 550px;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: var(--blue);
+    color: var(--red);
+    text-align: justify;
+}
+.main-text-title {
+    text-align: center;
+    margin-bottom: 10%;
+    font-weight: 900;
+}
+.main-text {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+}
+.image-container {
+    flex-basis: 40%;
+    background-color: var(--red);
+}
