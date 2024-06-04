@@ -412,7 +412,11 @@ footer a {
     }
     .text-container {
         min-height: 620px;
+        max-height: fit-content;
     }
+    .paragraph {
+        font-size: 1rem;     
+    }    
     .image-container {
         height: auto;
     }
