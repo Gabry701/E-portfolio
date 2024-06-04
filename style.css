@@ -411,9 +411,9 @@ footer a {
         position: fixed;
     }
     .text-container {
-        min-height: 620px;
-        max-height: max-content; 
-        max-height: fit-content;
+        max-height: auto;
+        height: max-content; 
+        height: fit-content;
         
     }
     .paragraph {
