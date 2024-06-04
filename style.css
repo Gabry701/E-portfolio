@@ -385,3 +385,44 @@ footer a {
 }
 
 
+@media (max-width: 1000px) {
+    .skill-grid {
+        display: flex;
+        flex-direction: column;
+        /* grid-template: repeat(3, minmax(50px, 450px))  / 1fr; */
+        gap: 20px;
+    }
+    .skill-container {
+        height: 300px;
+        margin: 0;
+    }
+    .more {
+        margin-top: 30px;
+        height: 100px;
+        align-self: center;
+    }
+    .secondary-body {
+        overflow: visible;
+    }
+    .skill-page-container {
+        display: block;
+    }
+    .skill-image {
+        position: fixed;
+    }
+    .text-container {
+        min-height: 620px;
+    }
+    .image-container {
+        height: auto;
+    }
+    .more-text {
+        font-size: 1.5rem;
+    }
+    footer {
+        height: 200px;
+    }
+    .footer-container {
+        padding-bottom: 15px;
+    }
+}
