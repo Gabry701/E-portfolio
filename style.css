@@ -412,10 +412,12 @@ footer a {
     }
     .text-container {
         min-height: 620px;
+        max-height: max-content; 
         max-height: fit-content;
+        
     }
     .paragraph {
-        font-size: 1rem;     
+        font-size: 1.1rem;     
     }    
     .image-container {
         height: auto;
