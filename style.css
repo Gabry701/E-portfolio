@@ -302,7 +302,6 @@ footer a {
     line-height: 1.5rem;
 }
 .image-container {
-    /* flex-basis: 30%; */
     width: fit-content;
 }
 
@@ -338,7 +337,6 @@ footer a {
         position: fixed;
     }
     .text-container {
-<<<<<<< HEAD
         max-height: none;
         height: fit-content;
         padding: 2rem;
@@ -352,17 +350,12 @@ footer a {
     .paragraph {
         margin: 1rem 0px;
     }
-=======
+.image-container {
         padding: 10px;
-        max-height: auto;
-        height: max-content; 
+        max-height: none;
         height: fit-content;
         
     }  
->>>>>>> 72bb6498b220f38d034f5f2031d62028f18deb2a
-    .image-container {
-        height: auto;
-    }
     .more-text {
         font-size: 1.5rem;
     }
