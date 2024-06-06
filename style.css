@@ -338,6 +338,7 @@ footer a {
         position: fixed;
     }
     .text-container {
+<<<<<<< HEAD
         max-height: none;
         height: fit-content;
         padding: 2rem;
@@ -351,6 +352,14 @@ footer a {
     .paragraph {
         margin: 1rem 0px;
     }
+=======
+        padding: 10px;
+        max-height: auto;
+        height: max-content; 
+        height: fit-content;
+        
+    }  
+>>>>>>> 72bb6498b220f38d034f5f2031d62028f18deb2a
     .image-container {
         height: auto;
     }
